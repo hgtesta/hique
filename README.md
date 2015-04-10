@@ -1,6 +1,6 @@
 # hique
 
-My personal site. Built on jekyll.
+My personal website. Built on jekyll.
 
 To run the site on local machine:
 
