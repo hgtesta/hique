@@ -28,6 +28,11 @@ $on-palm:          600px;
 $on-laptop:        900px;
 
 
+@font-face {
+    font-family: 'Glyphicons Regular';
+    src: url("/fonts/glyphicons-regular.woff") format('woff');
+}
+
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
