@@ -2,7 +2,7 @@
 title: Hique.org
 email: hgtesta@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Embrace imperfection.
+  Hiquepedia.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://hique.org" # the base hostname & protocol for your site
 twitter_username: hiquepedia

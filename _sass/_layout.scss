@@ -143,8 +143,8 @@
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+    width:         calc(25% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
@@ -153,8 +153,8 @@
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(55% - (#{$spacing-unit} / 2));
+    width:         calc(55% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
@@ -280,8 +280,20 @@
 /**
  * About
  */
+.about-me {
+    .nifty {
+        margin-top:190px;
+    }
+}
 .portrait {
     float: right;
+    width: 200px;
+    font-size: 12px;
+    img {
+        margin-right: 15px;
+        margin-bottom: 20px;
+        float: right;
+    }
 }
 
 
