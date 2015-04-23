@@ -25,6 +25,7 @@
 }
 
 .site-nav {
+    padding-top:10px;
     float: right;
     line-height: 56px;
 
@@ -33,13 +34,33 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $grey-color-light;
         line-height: $base-line-height;
+        text-decoration: none;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
-            margin-left: 20px;
+            // margin-left: 20px;
         }
+
+        &:hover {
+            color:#000;
+        }
+
+        &[active] {
+            color:#000;
+        }
+
+        // [Hique]
+        .nav-icon {
+            display:inline-block;
+            font-family: "Glyphicons Regular";
+            font-size:26px;
+            text-align:center;
+            width:33px;
+            padding-left:15px;
+        }
+
     }
 
     @include media-query($on-palm) {
@@ -236,10 +257,12 @@
     }
 }
 
-
-.nav-icon {
+.title-icon {
     font-family: "Glyphicons Regular";
-    font-size:26px;
+    font-size:36px;
+    padding-right:20px;
+    position:relative;
+    top:4px;
 }
 
 
@@ -259,5 +282,15 @@
  */
 .portrait {
     float: right;
+}
+
+
+/**
+ * Photos
+ */
+.photo-set img {
+    display: block;
+    margin-top:25px;
+    margin-bottom:70px;
 }
 

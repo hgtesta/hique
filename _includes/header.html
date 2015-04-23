@@ -16,9 +16,11 @@
 
       <div class="trigger">
         <!-- <a class="page-link" href="/articles/"><span class="nav-icon">✏</span></a> -->
-        <a class="page-link" href="/photos/"><span class="nav-icon"></span><!-- Photos --></a>
-        <a class="page-link" href="/projects/"><span class="nav-icon"></span><!-- Projects --></a>
-        <a class="page-link" href="/about/"><span class="nav-icon"></span><!-- About --></a>
+        <a class="page-link" href="/projects/" title="Projects" {% if page.title == 'Projects' %}{{ page.active }}{% endif %}>
+          <span class="nav-icon"></span></a><!--
+        --><a class="page-link" href="/photos/" title="Photos" {% if page.title == 'Photos' %}{{ page.active }}{% endif %}
+        ><span class="nav-icon"></span></a><!--
+        --><a class="page-link" href="/about/" title="About" {% if page.title == 'About' %}{{ page.active }}{% endif %}><span class="nav-icon"></span></a>
 
         <!--
         {% for page in site.pages %}
