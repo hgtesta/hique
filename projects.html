@@ -15,9 +15,9 @@ background: '#FCFCFC'
 </div>
 
 <div class="project">
-  <h3>Banco Central Gem</h3>
+  <h3>Banco Central Ruby Gem</h3>
   <p>
-    Extracted from <a href="http://indicador.org">indicador.org</a>. Simple gem to fetch social and economic indicators from Central Bank of Brazil (Banco Central do Brasil).
+    Extracted from <a href="http://indicador.org">indicador.org</a>. Simple Ruby gem to fetch social and economic indicators from Central Bank of Brazil (Banco Central do Brasil).
   </p>
   {% highlight ruby %}
   # Install
@@ -25,7 +25,10 @@ background: '#FCFCFC'
 
   # Use
   require "banco_central"
+
   BancoCentral.last(:euro)
+  BancoCentral.find(:euro, "15/3/2015")
+  BancoCentral.all(:euro, start: "1/1/2016")
   {% endhighlight %}
 
   See documentation and source code at
