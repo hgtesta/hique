@@ -15,6 +15,24 @@ background: '#FCFCFC'
 </div>
 
 <div class="project">
+  <h3>Banco Central Gem</h3>
+  <p>
+    Extracted from <a href="http://indicador.org">indicador.org</a>. Simple gem to fetch social and economic indicators from Central Bank of Brazil (Banco Central do Brasil).
+  </p>
+  {% highlight ruby %}
+  # Install
+  gem "banco_central"
+
+  # Use
+  require "banco_central"
+  BancoCentral.last(:euro)
+  {% endhighlight %}
+
+  See documentation and source code at
+  <a href="https://github.com/hgtesta/banco_central">https://github.com/hgtesta/banco_central</a>
+</div>
+
+<div class="project">
   <h3>Amize</h3>
   <a href="http://amize.com.br" title="Amize">
     <image src="/amize.png"></image>
